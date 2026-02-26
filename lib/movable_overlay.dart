@@ -76,7 +76,7 @@ class MovableOverlayState extends State<MovableOverlay>
     } else {
       if (widget.topWidget != null && bottomChild != null) {
         _isFloating = true;
-        _toggleFloatingAnimationController.forward();
+        _toggleFloatingAnimationController.value = 1;
       }
     }
   }
